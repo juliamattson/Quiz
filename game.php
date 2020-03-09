@@ -39,7 +39,7 @@
           <article class="panel__wrapper">
               <h1> Choose a Number </h1>
               <br>
-              <input type="range" value="0">
+              <input class="userValue" type="range" value="12" min="0" max="20" step="1" oninput="getValue(this.value)">
               <div id="h4-container"><div id="h4-subcontainer"><h4>0<span></span></h4></div></div>
             </div>
             <div style="margin-top: 3em;">
@@ -53,5 +53,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="./js/main.js"></script>
+        <script src="./logic.js"></script>
     </body>
 </html>
