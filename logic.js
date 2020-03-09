@@ -1,4 +1,13 @@
-/* $(document).ready(function() {
+$(document).ready(function() {
+  var badge = $(".selectedValue");
+  $(".userValue").on("change", function() {
+    var current = $(this).val();
+    badge.text(current).animate({
+      left: current + "%"
+    });
+  });
+});
+$(document).ready(function() {
   console.log("test");
   $("#sidebar").mCustomScrollbar({
     theme: "minimal"
@@ -19,10 +28,17 @@
     $(".collapse.in").toggleClass("in");
     $("a[aria-expanded=true]").attr("aria-expanded", "false");
   });
-}); */
+});
+/* var inc = 0;
+function getValue(newValue) { */
 
-function getValue(newValue) {
-  $(document).ready(function() {
-    console.log(newValue);
+/*     console.log(newValue);
+    $("#selectedValue").html(newValue);
+    var el = $("#h4-container");
+    var position = el.position();
+
+    inc = inc + 20;
+    $("#selectedValue").css("left", inc + "px");
+    console.log("left: " + position.left + ", top: " + position.top); 
   });
-}
+}  */

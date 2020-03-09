@@ -39,8 +39,10 @@
           <article class="panel__wrapper">
               <h1> Choose a Number </h1>
               <br>
-              <input class="userValue" type="range" value="12" min="0" max="20" step="1" oninput="getValue(this.value)">
-              <div id="h4-container"><div id="h4-subcontainer"><h4>0<span></span></h4></div></div>
+              <form action="">
+              <input class="userValue"  name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+              </form>
+              <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
             </div>
             <div style="margin-top: 3em;">
               <button class="primary-button" type="submit">Submit</button>
