@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
+        <script src="https://kit.fontawesome.com/e8127072bf.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="nav">
@@ -44,16 +45,19 @@
                     <div class="col-md-8 col-md-offset-2">
                       <div class="home-content">
                         <div class="home-heading">
-                          <h1><em>Rules</em></h1>
+                          <h1><em>Game rules</em></h1>
                         </div>
                         <div class="row">
                           <div class="col-md-12">
                             <div class="home-box-content">
                               <div class="left-text">
-                                <h4>Read our <em>Ruls</em> </h4>
-                                <p>You'll get the high score when you play if you guessed  the right number from the first attempt, Your score decreases with every wrong attempt. the minimum score is 1 and the highest is 20 points </p>
+                                <h4>Higher or <em>lower</em> </h4>
+                                <p><i class="fas fa-dice"></i> Choose a number between 1 and 20.<br>
+                                <i class="fas fa-dice"></i> The bot will tell you if the <b>right</b> number is higher or lower then the number you've choosen.<br>
+                                <i class="fas fa-dice"></i> Then you guess again until you figured out the right number.<br>
+                                <i class="fas fa-dice"></i> Try guessing the right number with as few attempts as possible to have a chance to enter our toplist.</p>
                                 <div class="primary-button">
-                                  <a href="./index.php">Start play</a>
+                                  <a href="./index.php">To startpage</a>
                                 </div>
                               </div>
                               <div class="right-image">
