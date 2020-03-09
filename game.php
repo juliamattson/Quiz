@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Group 3</title>
+        <title>Higher or lower</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,8 +39,10 @@
           <article class="panel__wrapper">
               <h1> Choose a Number </h1>
               <br>
-              <input type="range" value="0">
-              <div id="h4-container"><div id="h4-subcontainer"><h4>0<span></span></h4></div></div>
+              <form action="">
+              <input class="userValue"  name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+              </form>
+              <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
             </div>
             <div style="margin-top: 3em;">
               <button class="primary-button" type="submit">Submit</button>
@@ -53,5 +55,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="./js/main.js"></script>
+        <script src="./logic.js"></script>
     </body>
 </html>
