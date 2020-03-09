@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Group 3</title>
+        <title>Higher or lower</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,7 +26,7 @@
               <a href="./topList.php" class="nav__link c-yellow scrolly"><img src="img/about-icon.png" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="./ruls.html" class="nav__link c-red"><img src="./img/document.png" alt=""></a>
+              <a href="./rules.php" class="nav__link c-red"><img src="./img/document.png" alt=""></a>
             </li>
             <li class="nav__item">
               <a href="#4" class="nav__link c-green"><img src="img/contact-icon.png" alt=""></a>
