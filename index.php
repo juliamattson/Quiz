@@ -26,7 +26,7 @@
               <a href="./topList.php" class="nav__link c-yellow scrolly"><img src="img/about-icon.png" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="./ruls.html" class="nav__link c-red"><img src="./img/document.png" alt=""></a>
+              <a href="./rules.php" class="nav__link c-red"><img src="./img/document.png" alt=""></a>
             </li>
             <li class="nav__item">
               <a href="#4" class="nav__link c-green"><img src="img/contact-icon.png" alt=""></a>
@@ -36,7 +36,7 @@
 
         <section class="panel b-blue" >
           <article class="panel__wrapper">
-              <h1> LogIn and Stat Play </h1>
+              <h1> Log in and start to play </h1>
               <br>
             <div class="panel__content">
                 <div class="home-box-content">
@@ -44,11 +44,11 @@
                     <input id="input" type="password" placeholder="Type Your Password"/>
                 </div>
                 <div style="margin-top: 1em;">
-                <button class="primary-button" type="submit">LogIn</button>
-                <button class="primary-button" type="submit">Sing Up</button>
+                <button class="primary-button" type="submit">Log in</button>
+                <button class="primary-button" type="submit">Sign Up</button>
                 </div>
                 <div style="margin-top: 1em;">
-                    <a> Forget my Password</a>
+                    <a> Forgot my password</a>
                 </div>
 
             </div>
