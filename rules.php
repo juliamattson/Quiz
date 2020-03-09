@@ -44,7 +44,7 @@
                     <div class="col-md-8 col-md-offset-2">
                       <div class="home-content">
                         <div class="home-heading">
-                          <h1><em>Ruls</em></h1>
+                          <h1><em>Rules</em></h1>
                         </div>
                         <div class="row">
                           <div class="col-md-12">
