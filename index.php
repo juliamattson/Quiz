@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./css/Style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-        <script src="/requestHandler.js"> </script>
+       
     </head>
     <body>
         <nav class="nav">
@@ -43,8 +43,8 @@
               <br>
             <div class="panel__content">
                 <div class="home-box-content">
-                    <input id="input inputName" type="text" placeholder="Type Your Name"/>
-                    <input id="input inputPassword" type="password" placeholder="Type Your Password"/>
+                    <input id="input" class="inputName" type="text" placeholder="Type Your Name"/>
+                    <input id="input" class="inputPassword" type="password" placeholder="Type Your Password"/>
                 </div>
                 <div style="margin-top: 1em;">
                 <button class="primary-button" id="logIn" type="submit">Log in</button>

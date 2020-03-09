@@ -1,12 +1,13 @@
 $(document).ready(function () {
-        $("#logIn").on("click", function() {
-          const email = $("#inputName").val();
-          const password = $("#inputPassword").val();
-          if (name == "" || password == "") {
+        $("#logIn").on("click", function(e) {
+          e.preventDefault();
+          const userName = $(".inputName").val();
+          const password = $(".inputPassword").val();
+          if (userName == "" || password == "") {
             alert("Wrong!");
           } else {
             $.ajax({
-              url: "./API/Receivers",
+              url: "./API/Receivers/userReceiver.php",
               method: "POST",
               data: {
                 lognin: 1,
@@ -14,8 +15,8 @@ $(document).ready(function () {
                 password: password,
               },
               dataType: "json",
-              success: function(data) {
-                  if(data==false){
+              success: function(response) {
+                  if(response==false){
                       alert("No such user");
                   }
                   else {

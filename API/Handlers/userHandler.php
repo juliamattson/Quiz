@@ -1,11 +1,11 @@
 <?php
-session_start();
+//ession_start();
 include("../Classes/databaseClass.php");
 //$database=new db;
 function logIn($userName,$password){
 $q = "SELECT userName FROM user WHERE userName= :userName AND password= :password ;";
           $query = $this->db->link->prepare($q);
-          $query->bindParam(":email", $userName);
+          $query->bindParam(":userName", $userName);
           $query->bindParam(":password", $password);
           
           
