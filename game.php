@@ -35,8 +35,12 @@
             </li>
           </ul>
         </nav>
+
         <section class="panel b-blue" >
           <article class="panel__wrapper">
+           <img src="./img/friendly-bot.gif" alt="" id="friendly-bot" height="200px" width="auto">
+              <h3>Friendly Bot</h3>
+              <p>He's a happy and friendly bot, try to beat him.</p>
               <h1> Choose a Number </h1>
               <br>
               <form action="">
@@ -48,9 +52,7 @@
               <button class="primary-button" type="submit">Submit</button>
               </div>
           </article>
-        </section>
-        <section>
-            
+        
         </section>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
