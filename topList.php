@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
+        <script defer src="/requestHandler.js"></script>
+        <script defer src="./js/main.js"></script>
     </head>
     <body>
         <nav class="nav">
@@ -35,7 +37,12 @@
         </nav>
 
         <section >
-
+          <div>
+            <h2>Top List</h2>
+          </div>
+          <div class="MainTopListDiv">
+          
+          </div>
 
         </section>
         <section>
@@ -43,6 +50,5 @@
         </section>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="./js/main.js"></script>
     </body>
 </html>

@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
         <link rel="stylesheet" href="./css/styleGame.css">
-        <script src="/requestHandler.js"></script>
 
     </head>
     <body>
