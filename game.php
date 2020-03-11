@@ -50,6 +50,7 @@
             </div>
             <div style="margin-top: 3em;">
               <button class="primary-button" type="submit">Submit</button>
+              <h4 class="result" id="resultId"></h4>
               </div>
           </article>
         
