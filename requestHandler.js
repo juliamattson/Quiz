@@ -16,18 +16,21 @@ $(document).ready(function () {
               },
               dataType: "json",
               success: function(response) {
-                  if(response==false){
-                      alert("No such user");
-                  }
-                  else {
-                    alert("No such user");
-                  }
+                if (response.status == 404){
+                } else {
+                    console.log(response);
+                   // $(location).attr('href','http://localhost:1401/game.php');
+                    //window.location.replace('game.php');
+                    top.location = './game.php';
+                }
               }
             })
 
 } }
 );
+
 });
+
 function makeRequest(url, method, FormData, callback) {
     fetch(url, {
         method: method,
@@ -42,14 +45,6 @@ function makeRequest(url, method, FormData, callback) {
 }
 
 getTopList();
-function getAllUser() {
-    makeRequest('./API/Receivers/userReceiver.php?endpoint=getAllUser', 'GET', null, (result) => {
-        if (result.status == 404){
-        } else {
-            console.log(result);
-        }
-    })
-}
 
 function getTopList() {
     makeRequest('./API/Receivers/topListReceiver.php?endpoint=getTopList', 'GET', null, (result) => {
@@ -59,7 +54,37 @@ function getTopList() {
         }
     })
 }
+$(document).ready(function (){
+  $("#signUp").on("click", function(e) {
+    e.preventDefault();
+    const userName = $(".inputName").val();
+    const password = $(".inputPassword").val();
+    if (userName == "" || password == "") {
+      alert("Wrong!");
+    } else {
+      $.ajax({
+        url: "./API/Receivers/signUpReceiver.php",
+        method: "POST",
+        data: {
+          signup: 1,
+          userName: userName,
+          password: password,
+        },
+        dataType: "json",
+        success: function(response) {
+          if (response.status == 405){
+          } else {
+              //console.log(response);
+             // $(location).attr('href','http://localhost:1401/game.php');
+              //window.location.replace('game.php');
+              top.location = './game.php';
+          }
+        }
+      })
 
+} }
+);
+});
 function renderTopList(result) {
     let MainTopListDiv = document.getElementsByClassName("MainTopListDiv")[0];
     let TopList = result;
