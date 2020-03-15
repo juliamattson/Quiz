@@ -5,9 +5,8 @@ function getTopList() {
     include_once('./../Classes/databaseClass.php');
     $database = new Database();
 
-    $query = <<<EOD
-    SELECT userName, point FROM user ORDER BY point DESC LIMIT 5;
-    EOD;
+    $query = "SELECT userName, point FROM user ORDER BY point DESC LIMIT 5;";
+   
 
     $statement = $database->connection->prepare($query);
     $statement->execute();
