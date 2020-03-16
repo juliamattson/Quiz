@@ -197,7 +197,7 @@ ul {
 }
 
 .panel {
-background: aquamarine;
+background: #33b7756e;
   margin: 0;	
   min-height: 100vh;
   display: -webkit-box;
@@ -213,7 +213,7 @@ background: aquamarine;
 }
 
 .ruls {
-  background: #3e4e62;
+  background: #dedede;
     margin: 0;	
     min-height: 100vh;
     display: -webkit-box;
@@ -312,21 +312,26 @@ background: aquamarine;
 	margin: 10vh auto 0 auto;
 }
 
-.home-content h1 {
-	padding-top: 120px;
-	font-size: 32px;
-	text-transform: uppercase;
-    color: #fff;
-	font-weight: 300;
-}
-
-.home-content h1 em {
+h1 {
 	margin-right: 20px;
-	font-size: 80px;
-	font-style: normal;
-	font-weight: 800;
+	font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
 }
 
+h4{
+	font-size: 30px;
+  font-style: normal;
+  color: #821e69;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.topListStyle{
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+}
 
 .home-content .home-box-content {
   margin-top: 45px;
@@ -425,13 +430,13 @@ background: aquamarine;
   }
 
 button{
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 2px;
     border: 2px solid #fff;
     border-radius: 3px;
     color: #821e69;
     background: #ffffff10;
-    width: 280px;
+    width: 220px;
     height: 26px;
 }
 

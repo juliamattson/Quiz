@@ -4,7 +4,7 @@
 ?>
 
 <!doctype html>
- <html class="no-js" lang=""> 
+ <html> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -43,28 +43,19 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                      <div class="home-content">
+                      <div>
                         <div class="home-heading">
-                          <h1><em>Game rules</em></h1>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="home-box-content">
-                              <div class="left-text">
-                                <h4>Higher or <em>lower</em> </h4>
-                                <p><i class="fas fa-dice"></i> Choose a number between 1 and 20.<br>
-                                <i class="fas fa-dice"></i> The bot will tell you if the <b>right</b> number is higher or lower then the number you've choosen.<br>
-                                <i class="fas fa-dice"></i> Then you guess again until you figured out the right number.<br>
-                                <i class="fas fa-dice"></i> Try guessing the right number with as few attempts as possible to have a chance to enter our toplist.</p>
+                          <h1>Game rules</h1>
+                          <h4>Higher or <b>lower</b></h4>
+                          <p class="topListStyle">
+                            <i class="fas fa-dice"></i> Choose a number between 1 and 20.<br>
+                            <i class="fas fa-dice"></i> The bot will tell you if the <b>right</b> number is higher or lower then the number you've choosen.<br>
+                            <i class="fas fa-dice"></i> Then you guess again until you figured out the right number.<br>
+                            <i class="fas fa-dice"></i> Try guessing the right number with as few attempts as possible to have a chance to enter our toplist.
+                          </p>
                                 <div class="primary-button">
-                                  <a href="./index.php">To startpage</a>
+                                  <a href="./index.php">Start Play</a>
                                 </div>
-                              </div>
-                              <div class="right-image">
-                                <img src="img/right-home-image.png" alt="">
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -73,9 +64,6 @@
               </div>
             </article>
           </section>
-        <section>
-            
-        </section>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="./js/main.js"></script>

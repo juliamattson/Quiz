@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
   var badge = $(".selectedValue");
   var randomnum = Math.floor(Math.random() * 20);
@@ -49,3 +50,4 @@ $(document).ready(function() {
     $("a[aria-expanded=true]").attr("aria-expanded", "false");
   });
 });
+
