@@ -11,9 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-       
     </head>
     <body>
         <nav class="nav">
@@ -23,7 +20,7 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
+              <a href="./index.php" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
             </li>
             <li class="nav__item">
               <a href="./topList.php" class="nav__link c-yellow scrolly"><img src="img/about-icon.png" alt=""></a>
@@ -41,7 +38,7 @@
           <article class="panel__wrapper">
               <h1> Log in and start to play </h1>
               <br>
-            <div class="panel__content">
+              <div class="panel__content">
                 <div class="home-box-content">
                     <input id="input" class="inputName" type="text" placeholder="Type Your Name"/>
                     <input id="input" class="inputPassword" type="password" placeholder="Type Your Password"/>
@@ -63,6 +60,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="./js/main.js"></script>
-        <script src="/requestHandler.js"> </script>
+        <script src="./requestHandler.js"></script>
     </body>
 </html>
