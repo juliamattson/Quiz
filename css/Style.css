@@ -498,4 +498,27 @@ svg {
   letter-spacing: -0.4px;
 }
 
+/* Styling för toplist.php */
 
+#toplistHeader {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.contentDiv {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.userNameToplist, .pointToplist {
+  color: white;
+  padding-right: 5px;
+}
+
+.userNameToplist {
+  font-weight: bold;
+}
