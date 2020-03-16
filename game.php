@@ -41,7 +41,7 @@
            <img src="./img/friendly-bot.gif" alt="" id="friendly-bot" height="200px" width="auto">
               <h3>Friendly Bot</h3>
               <p>He's a happy and friendly bot, try to beat him.</p>
-              <h1> Choose a Number </h1>
+              <h2> Choose a Number </h2>
               <br>
               <form action="">
               <input class="userValue"  name="amountRange" type="range"  min="0" max="20" step="1" value="0">

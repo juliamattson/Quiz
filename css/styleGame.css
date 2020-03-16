@@ -28,12 +28,11 @@ html h1 {
 }
 
 html h3 {
-  color: #aaa;
+  margin-top: 1em;
   font-weight: 500;
 }
 
 html h4 {
-  color: #999;
   font-weight: 500;
 }
 
