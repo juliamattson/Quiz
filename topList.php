@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="./css/Style.css">
         <script defer src="/requestHandler.js"></script>
         <script defer src="./js/main.js"></script>
+        <script src="https://kit.fontawesome.com/e8127072bf.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="nav">
@@ -38,7 +40,7 @@
 
         <section >
           <div>
-            <h2>Top List</h2>
+            <h2 id="toplistHeader">Top List <i class="fas fa-list-ol"></i></h2>
           </div>
           <div class="MainTopListDiv">
           
