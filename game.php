@@ -41,10 +41,11 @@
            <img src="./img/friendly-bot.gif" alt="" id="friendly-bot" height="200px" width="auto">
               <h3>Friendly Bot</h3>
               <p>He's a happy and friendly bot, try to beat him.</p>
+              <h4>Player Power: <span id="power">100</span></h4>
               <h2> Choose a Number </h2>
               <br>
               <form action="">
-              <input class="userValue"  name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+              <input class="userValue"  id="uValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
               </form>
               <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
             </div>
