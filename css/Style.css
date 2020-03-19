@@ -513,18 +513,3 @@ svg {
 .downText {
     letter-spacing: -0.4px;
 }
-
-.number {
-    width: 30px;
-}
-
-.counterContainer {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    margin-top: -20px;
-    margin-left: 25px;
-    font-size: 18px;
-    width: 370px;
-    height: 25px;
-}
