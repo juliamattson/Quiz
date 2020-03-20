@@ -36,7 +36,7 @@
 
         <section class="panel b-blue" >
           <article class="panel__wrapper">
-              <h1> Log in and start to play </h1>
+              <h1> Login & Play </h1>
               <br>
               <div class="panel__content">
                 <div class="home-box-content">

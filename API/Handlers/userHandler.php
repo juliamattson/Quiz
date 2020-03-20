@@ -23,19 +23,16 @@ $query = "SELECT userName, password FROM user WHERE userName= :userName AND pass
 function signUp($userName,$password){
  include_once("../Classes/databaseClass.php");
     $database = new Database();
-    $query = "INSERT INTO user (:userName, :password);";
-            $statement = $database->connection->prepare($query);
-            $statement->bindParam(":userName", $userName);
-             $statement->bindParam(":password", $password);
-        $statement->execute();
-        $result = $statement->rowCount();
-    
-        if ($result=0) {
+    $query = "INSERT INTO user (userName, password, point) VALUES ('$userName','$password',0) ;";
+    // $statement = $database->connection->prepare($query);
+     //$statement->execute([$userName,$password]);
+     $statement = $database->connection->exec($query);
+      echo $statement;
+ if (!$statement) {
             throw new exception('can not register user', 405);
             exit;
         }
-        
         $_SESSION["userName"]= $userName;
-        return $result; 
+        return $statement; 
 }
 ?>

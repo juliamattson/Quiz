@@ -211,24 +211,26 @@ ul {
 }
 
 .panel {
-    background: aquamarine;
-    margin: 0;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    overflow: hidden;
+
+background: #33b7756e;
+  margin: 0;	
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: visible;
 }
 
 .ruls {
-    background: #3e4e62;
-    margin: 0;
+  background: #dedede;
+    margin: 0;	
+
     min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,6 +331,28 @@ ul {
     position: relative;
     margin: 10vh auto 0 auto;
 }
+
+h1 {
+	margin-right: 20px;
+	font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h4{
+	font-size: 30px;
+  font-style: normal;
+  color: #821e69;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.topListStyle{
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+}
+
 
 .home-content h1 {
     padding-top: 120px;
@@ -466,13 +490,14 @@ button:hover {
 */
 
 body {
-    background-color: #03A9F4;
-    overflow: hidden;
-    font-family: 'Ropa Sans', sans-serif;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  background-color: #03A9F4;
+  overflow: hidden;
+  font-family: 'Ropa Sans', sans-serif;
+  text-align:center;
+  align-items: center;
+  justify-content: center;    
+
 }
 
 body,
@@ -487,6 +512,38 @@ svg {
     width: 150%;
     height: 150%;
     visibility: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3e4e62;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #821e69;
+}
+.active {
+  background-color: #821e69;
+}
+
+@media screen and (max-width: 600px) {
+  ul li.right, 
+  ul li {float: none;}
 }
 
 .upText,
@@ -511,5 +568,34 @@ svg {
 }
 
 .downText {
-    letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
 }
+
+/*
+========================
+------ Styling toplist------
+========================
+*/
+#toplistHeader {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.contentDiv {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+.userNameToplist, .pointToplist {
+  color: white;
+  padding-right: 5px;
+}
+
+.userNameToplist {
+  font-weight: bold;
+}
+
