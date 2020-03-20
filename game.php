@@ -2,7 +2,7 @@
 
 ?>
 <!doctype html>
- <html class="no-js" lang=""> 
+ <html> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,26 +15,26 @@
 
     </head>
     <body>
-        <nav class="nav">
-          <div class="burger">
-            <div class="burger__patty"></div>
-          </div>
-
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.php" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
+    <nav>
+          <ul >
+            <li >
+              <a href="./index.php" > <img src="img/home-icon.png" alt="">  Home </a>
             </li>
-            <li class="nav__item">
-              <a href="./topList.php" class="nav__link c-yellow scrolly"><img src="img/about-icon.png" alt=""></a>
+            <li >
+              <a href="./topList.php" > <img src="img/about-icon.png" alt="">  ToList</a>
             </li>
-            <li class="nav__item">
-              <a href="./rules.php" class="nav__link c-red"><img src="./img/document.png" alt=""></a>
+            <li >
+              <a href="./rules.php" >  <img src="./img/document.png" alt="">  Rules</a>
             </li>
-            <li class="nav__item">
-              <a href="#4" class="nav__link c-green"><img src="img/contact-icon.png" alt=""></a>
+            <li >
+              <a href="#4" > <img src="./img/restart.png" alt="">  Restart</a>
+            </li>
+            <li >
+              <a href="#4"> <img src="./img/exit.png" alt="">  Sing Out</a>
             </li>
           </ul>
         </nav>
+
 
         <section class="panel b-blue" >
           <article class="panel__wrapper">
@@ -49,10 +49,7 @@
               </form>
               <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
             </div>
-            <div style="margin-top: 3em;">
-              <button class="primary-button" type="submit">Submit</button>
-              <h4 class="result" id="resultId"></h4>
-              </div>
+          
           </article>
         
         </section>

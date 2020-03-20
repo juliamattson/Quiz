@@ -209,7 +209,7 @@ background: #33b7756e;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .ruls {
@@ -458,7 +458,6 @@ body {
   overflow: hidden;
   font-family: 'Ropa Sans', sans-serif;
   text-align:center;
-    display: flex;
   align-items: center;
   justify-content: center;    
 }
@@ -471,11 +470,42 @@ html {
   padding: 0;
 }
 
-
 svg {
   width: 150%;
   height:150%;
   visibility: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3e4e62;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #821e69;
+}
+.active {
+  background-color: #821e69;
+}
+
+@media screen and (max-width: 600px) {
+  ul li.right, 
+  ul li {float: none;}
 }
 
 .upText,
@@ -503,8 +533,11 @@ svg {
   letter-spacing: -0.4px;
 }
 
-/* Styling för toplist.php */
-
+/*
+========================
+------ Styling toplist------
+========================
+*/
 #toplistHeader {
   color: white;
   font-family: 'Bebas Neue', cursive;
