@@ -4,6 +4,21 @@ $(document).ready(function() {
   var result = $(".result");
   var power = document.getElementById("power").innerHTML;
   console.log(randomnum);
+  var timeLeft = 30;
+  var elem = document.getElementById("timer");
+
+  var timerId = setInterval(countdown, 1000);
+
+  function countdown() {
+    if (timeLeft == 0) {
+      clearTimeout(timerId);
+      document.getElementById("uValue").disabled = true;
+      result.html("Timeout");
+    } else {
+      elem.innerHTML = timeLeft + " seconds remaining";
+      timeLeft--;
+    }
+  }
   $(".userValue").on("change", function() {
     var current = $(this).val();
     if (current <= 5) {

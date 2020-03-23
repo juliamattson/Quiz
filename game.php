@@ -42,6 +42,7 @@
               <h3>Friendly Bot</h3>
               <p>He's a happy and friendly bot, try to beat him.</p>
               <h4>Player Power: <span id="power">100</span></h4>
+              <div id="timer"></div>
               <h2> Choose a Number </h2>
               <br>
               
