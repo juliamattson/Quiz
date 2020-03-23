@@ -10,10 +10,10 @@ $(document).ready(function() {
   var timerId = setInterval(countdown, 1000);
 
   function countdown() {
-    if (timeLeft == 0) {
-      clearTimeout(timerId);
+    if (timeLeft < 0) {
       document.getElementById("uValue").disabled = true;
       result.html("Timeout");
+      clearTimeout(timerId);
     } else {
       elem.innerHTML = timeLeft + " seconds remaining";
       timeLeft--;

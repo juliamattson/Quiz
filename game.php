@@ -12,6 +12,17 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
         <link rel="stylesheet" href="./css/styleGame.css">
+        <style>
+        #timer{
+          text-align:center;
+          color:#ffffff;
+          background:tomato;
+          width:150px;
+          height:40px;
+          margin:10px auto;
+          padding-top:10px;
+        }
+        </style>
 
     </head>
     <body>
