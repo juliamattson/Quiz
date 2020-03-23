@@ -27,7 +27,7 @@
           <a href="./rules.php" >  <img src="./img/document.png" alt="">  Rules</a>
         </li>
         <li>
-          <a href="#4" > <img src="./img/restart.png" alt="">  Restart</a>
+        <a type="button" onClick="window.location.href=window.location.href"> <img src="./img/restart.png">  Restart</a>
         </li>
         <li>
           <a id="signOut" href="#"> <img src="./img/exit.png" alt="">  Sign out</a>
