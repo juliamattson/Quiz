@@ -21,7 +21,7 @@
           <a href="./index.php" > <img src="img/home-icon.png" alt="">  Home </a>
         </li>
         <li>
-          <a href="./topList.php" > <img src="img/about-icon.png" alt="">  ToList</a>
+          <a href="./topList.php" > <img src="img/about-icon.png" alt="">  Toplist</a>
         </li>
         <li>
           <a href="./rules.php" >  <img src="./img/document.png" alt="">  Rules</a>
