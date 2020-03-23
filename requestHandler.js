@@ -114,3 +114,28 @@ function renderTopList(result) {
         contentDiv.appendChild(point);
     }    
 }  
+
+
+$(document).ready(function (){
+  $(".signOut").on("click", function(e) {
+    e.preventDefault();
+  
+      $.ajax({
+        url: "./API/Receivers/signOutReceiver.php",
+        method: "POST",
+        data: {
+          signOut: 1,
+        },
+        dataType: "json",
+        success: function(response) {
+          if (response.status == 405){
+          } else {
+            
+              top.location = './index.php';
+          }
+        }
+      });
+
+ }
+);
+});
