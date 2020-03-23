@@ -28,11 +28,16 @@ $(document).ready(function() {
       console.log("Guessed");
       document.getElementById("uValue").disabled = true;
       result.html(" ");
+
       let img = document.createElement("img");
       img.src = "img/win.gif";
       img.setAttribute("alt", "win");
       img.setAttribute("width", "200px");
       document.getElementById("resultId").appendChild(img);
+      () => {
+        var snd = new Audio("happy_donald.mp3"); // buffers automatically when created
+        snd.play();
+      };
 
       /* result.html("Guessed"); */
     }
