@@ -23,33 +23,36 @@ $(document).ready(function() {
         left: current * 45 - 20 + "%"
       });
     }
+
+    power = power - 10;
+    document.getElementById("power").innerHTML = power;
+
+    if (power < 50) {
+      result.html("Lost");
+      document.getElementById("uValue").disabled = true;
+    }
+
+    if (current < randomnum) {
+      console.log("Go up");
+      result.html("Go up");
+    } else if (current > randomnum) {
+      console.log("Go Down");
+      result.html("Go Down");
+    } else if (current == randomnum) {
+      console.log("Guessed");
+
+      result.html(" ");
+      let img = document.createElement("img");
+      img.src = "img/win.gif";
+      img.setAttribute("alt", "win");
+      img.setAttribute("width", "200px");
+      document.getElementById("resultId").appendChild(img);
+
+      document.getElementById("uValue").disabled = true;
+
+      /* result.html("Guessed"); */
+    }
   });
-  power = power - 10;
-  document.getElementById("power").innerHTML = power;
-
-  if (power < 50) {
-    result.html("Lost");
-    document.getElementById("uValue").disabled = true;
-  }
-
-  if (current < randomnum) {
-    console.log("Go up");
-    result.html("Go up");
-  } else if (current > randomnum) {
-    console.log("Go Down");
-    result.html("Go Down");
-  } else {
-    console.log("Guessed");
-    document.getElementById("uValue").disabled = true;
-    result.html(" ");
-    let img = document.createElement("img");
-    img.src = "img/win.gif";
-    img.setAttribute("alt", "win");
-    img.setAttribute("width", "200px");
-    document.getElementById("resultId").appendChild(img);
-
-    /* result.html("Guessed"); */
-  }
 });
 
 $(document).ready(function() {

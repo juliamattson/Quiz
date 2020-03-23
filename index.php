@@ -61,5 +61,6 @@
 
         <script src="./js/main.js"></script>
         <script src="./requestHandler.js"></script>
+        <script src="./logic.js"></script>
     </body>
 </html>
