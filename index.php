@@ -1,6 +1,7 @@
 <?php
 
 ?>
+
 <!doctype html>
  <html class="no-js" lang=""> 
     <head>
@@ -11,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
+        <script src="https://kit.fontawesome.com/e8127072bf.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="nav">
@@ -20,7 +22,7 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.php" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
+              <a href="#" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
             </li>
             <li class="nav__item">
               <a href="./topList.php" class="nav__link c-yellow scrolly"><img src="img/about-icon.png" alt=""></a>
@@ -61,6 +63,6 @@
 
         <script src="./js/main.js"></script>
         <script src="./requestHandler.js"></script>
-        <script src="./logic.js"></script>
+
     </body>
 </html>
