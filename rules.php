@@ -49,6 +49,7 @@
                           <h4>Higher or <b>lower</b></h4>
                           <p class="topListStyle">
                             <i class="fas fa-dice"></i> Choose a number between 1 and 20.<br>
+                            <i class="fas fa-dice"></i> You only have 5 attempts, or else the bot will win!<br>
                             <i class="fas fa-dice"></i> The bot will tell you if the <b>right</b> number is higher or lower then the number you've choosen.<br>
                             <i class="fas fa-dice"></i> Then you guess again until you figured out the right number.<br>
                             <i class="fas fa-dice"></i> Try guessing the right number with as few attempts as possible to have a chance to enter our toplist.
