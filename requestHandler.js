@@ -100,18 +100,16 @@ function renderTopList(result) {
         contentDiv.classList = 'contentDiv';
         
         let userName = document.createElement('p');
-        userName.classList = 'text';
-        userName.innerText = selectedTopList.userName;
+        userName.classList = 'userNameToplist';
+        userName.innerText = selectedTopList.userName + ': ';
 
         let point = document.createElement('p')
-        point.classList = 'text';
-        point.innerText = selectedTopList.point + '' + ' Points';
-
-
-        TopListDiv.appendChild(contentDiv);
+        point.classList = 'pointToplist';
+        point.innerText = selectedTopList.point + '' + ' points';
 
         contentDiv.appendChild(userName);
         contentDiv.appendChild(point);
+        TopListDiv.appendChild(contentDiv);
     }    
 }  
 

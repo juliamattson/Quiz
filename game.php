@@ -32,11 +32,7 @@
               <a href="#4" > <img src="./img/restart.png" alt="">  Restart</a>
             </li>
             <li >
-<<<<<<< Updated upstream
               <a href="#4"> <img src="./img/exit.png" alt="">  Sing Out</a>
-=======
-              <a href="#" class="signOut"> <img src="./img/exit.png" alt="">  Sign Out</a>
->>>>>>> Stashed changes
             </li>
           </ul>
         </nav>
@@ -77,7 +73,7 @@
               
               </div>
               
-              <input class="userValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+              <input class="userValue" id ="uValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
               </form>
               <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
             </div>

@@ -28,12 +28,11 @@ html h1 {
 }
 
 html h3 {
-  color: #aaa;
+  margin-top: 1em;
   font-weight: 500;
 }
 
 html h4 {
-  color: #999;
   font-weight: 500;
 }
 
@@ -167,3 +166,49 @@ input:not(:active) + #h4-container h4 {
   pointer-events: none;
 }
 /*# sourceMappingURL=styleGame.css.map */
+.number {
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.counterContainer {
+  display: flex;
+  position: absolute;
+  margin-left: 50px;
+  font-size: 14px;
+  height: 25px;
+}
+
+.number0.number,
+.number1.number,
+.number3.number,
+.number5.number,
+.number6.number,
+.number7.number,
+.number8.number {
+  width: 16px;
+}
+
+.number9.number,
+.number10.number,
+.number12.number,
+.number13.number,
+.number14.number,
+.number15.number,
+.number16.number,
+.number17.number,
+.number18.number,
+.number19.number {
+  width: 17px;
+}
+
+.number11.number {
+  width: 18px;
+}
+
+.number20.number,
+.number4.number,
+.number2.number {
+  width: 20px;
+}
