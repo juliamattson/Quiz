@@ -12,8 +12,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/Style.css">
         <link rel="stylesheet" href="./css/styleGame.css">
-        <script src="./requestHandler.js"></script>
-
 
     </head>
     <body>
@@ -32,7 +30,7 @@
               <a href="#4" > <img src="./img/restart.png" alt="">  Restart</a>
             </li>
             <li >
-              <a href="#4" id="signOut"> <img src="./img/exit.png" alt="">  Sign Out</a>
+              <a href="#4"> <img src="./img/exit.png" alt="">  Sign out</a>
             </li>
           </ul>
         </nav>
@@ -73,7 +71,7 @@
               
               </div>
               
-              <input class="userValue" id ="uValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+              <input class="userValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
               </form>
               <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
             </div>
@@ -85,11 +83,9 @@
           </article>
         
         </section>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>') </script>
-        <script src="./requestHandler.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
         <script src="./js/main.js"></script>
         <script src="./logic.js"></script>
-       
-
     </body>
 </html>
