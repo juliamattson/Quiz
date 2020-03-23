@@ -4,19 +4,25 @@ $(document).ready(function() {
   var result = $(".result");
   var power = document.getElementById("power").innerHTML;
   console.log(randomnum);
-  var timeLeft = 30;
-  var elem = document.getElementById("timer");
+  var timeAvailable = 10;
+  var eleTimer = document.getElementById("timer");
 
-  var timerId = setInterval(countdown, 1000);
+  var timer = setInterval(countdown, 1000);
 
   function countdown() {
-    if (timeLeft < 0) {
+    if (timeAvailable < 0) {
+      console.log("zero");
       document.getElementById("uValue").disabled = true;
-      result.html("Timeout");
-      clearTimeout(timerId);
+      result.html("TIMEOUT");
+      let img = document.createElement("img");
+      img.src = "img/timeout.png";
+      img.setAttribute("alt", "timeout");
+      img.setAttribute("width", "200px");
+      document.getElementById("resultId").appendChild(img);
+      clearTimeout(timer);
     } else {
-      elem.innerHTML = timeLeft + " seconds remaining";
-      timeLeft--;
+      eleTimer.innerHTML = timeAvailable + " seconds remaining";
+      timeAvailable--;
     }
   }
   $(".userValue").on("change", function() {

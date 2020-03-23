@@ -22,6 +22,9 @@
           margin:10px auto;
           padding-top:10px;
         }
+        .result{
+          color:#ffffff;
+        }
         </style>
 
     </head>
@@ -82,7 +85,7 @@
             <div  class="number18 number">19</div>
             <div  class="number19 number">20</div>
             </div>
-            <input class="userValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+            <input class="userValue" id="uValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
           </form>
           <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
         </div>
