@@ -115,7 +115,7 @@ function renderTopList(result) {
 
 
 $(document).ready(function (){
-  $(".signOut").on("click", function(e) {
+  $("#signOut").on("click", function(e) {
     e.preventDefault();
   
       $.ajax({

@@ -32,7 +32,7 @@
               <a href="#4" > <img src="./img/restart.png" alt="">  Restart</a>
             </li>
             <li >
-              <a href="#4"> <img src="./img/exit.png" alt="">  Sing Out</a>
+              <a href="#4" id="signOut"> <img src="./img/exit.png" alt="">  Sign Out</a>
             </li>
           </ul>
         </nav>
