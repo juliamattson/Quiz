@@ -63,6 +63,7 @@
         </section>
         <section class="inputBar">
           <form action="" >
+            <div class="mainContainer">
             <div class="counterContainer">
             <div  class="number0 number">1</div>
             <div class="number1 number">2</div>
@@ -86,6 +87,7 @@
             <div  class="number19 number">20</div>
             </div>
             <input class="userValue" id="uValue" name="amountRange" type="range"  min="0" max="20" step="1" value="0">
+            </div>
           </form>
           <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
         </div>
