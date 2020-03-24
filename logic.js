@@ -4,7 +4,7 @@ $(document).ready(function() {
   var result = $(".result");
   var power = document.getElementById("power").innerHTML;
   console.log(randomnum);
-  var timeAvailable = 10;
+  var timeAvailable = 20;
   var eleTimer = document.getElementById("timer");
 
   var timer = setInterval(countdown, 1000);
@@ -17,7 +17,7 @@ $(document).ready(function() {
       let img = document.createElement("img");
       img.src = "img/timeout.png";
       img.setAttribute("alt", "timeout");
-      img.setAttribute("width", "200px");
+      img.setAttribute("width", "100px");
       document.getElementById("resultId").appendChild(img);
       clearTimeout(timer);
     } else {
@@ -51,6 +51,7 @@ $(document).ready(function() {
     if (power < 50) {
       result.html("Lost");
       document.getElementById("uValue").disabled = true;
+      clearInterval(timer);
     }
 
     if (current < randomnum) {
@@ -66,7 +67,7 @@ $(document).ready(function() {
       let img = document.createElement("img");
       img.src = "img/win.gif";
       img.setAttribute("alt", "win");
-      img.setAttribute("width", "200px");
+      img.setAttribute("width", "100px");
       document.getElementById("resultId").appendChild(img);
 
       document.getElementById("uValue").disabled = true;
