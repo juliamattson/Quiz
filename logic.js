@@ -12,25 +12,32 @@ $(document).ready(function() {
 //   setInterval(countdown, 1000);
 // });
   function countdown() {
-    if (timeAvailable < 0) {
+    if (timeAvailable <0) {
       console.log("zero");
       document.getElementById("uValue").disabled = true;
-      result.html("TIMEOUT");
+      result.html("GAME OVER");
       let img2=document.getElementById("friendly-bot");
       img2.src="./img/sad.gif";
-      img.setAttribute("alt", "timeout");
-      img.setAttribute("width", "100px");
-      document.getElementById("resultId").appendChild(img);
+      //img.setAttribute("alt", "timeout");
+      //img.setAttribute("width", "100px");
+      //document.getElementById("resultId").appendChild(img);
       clearTimeout(timer);
-    } else {
+    } 
+    else {
       eleTimer.innerHTML = timeAvailable + " seconds remaining";
       timeAvailable--;
     }
   }
+
+  $(".userValue").one("change", function() {
+    setInterval(countdown, 1000);
+  });
+
+  
   $(".userValue").on("change", function() {
     //document.getElementById("timer").style.display = 'inblock';
   $("#timer").fadeIn();
-        setInterval(countdown, 1000);
+        //setInterval(countdown, 1000);
      
     var current = $(this).val();
     if (current <= 5) {
@@ -55,6 +62,7 @@ $(document).ready(function() {
     document.getElementById("power").innerHTML = power;
 
     if (power <=0) {
+      timeAvailable=-1000;
       result.html("Lost");
       document.getElementById("uValue").disabled = true;
       let img2=document.getElementById("friendly-bot");
