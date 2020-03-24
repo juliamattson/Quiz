@@ -17,7 +17,11 @@ $(document).ready(function() {
       let img = document.createElement("img");
       img.src = "img/timeout.png";
       img.setAttribute("alt", "timeout");
+<<<<<<< HEAD
       img.setAttribute("width", "200px");
+=======
+      img.setAttribute("width", "100px");
+>>>>>>> b004382be5dc3eb275c303326884b7ca7dd04943
       document.getElementById("resultId").appendChild(img);
       clearTimeout(timer);
     } else {
@@ -51,6 +55,7 @@ $(document).ready(function() {
     if (power <=0) {
       result.html("Lost");
       document.getElementById("uValue").disabled = true;
+      clearInterval(timer);
     }
 
     if (current < randomnum) {
@@ -61,12 +66,12 @@ $(document).ready(function() {
       result.html("Go Down");
     } else if (current == randomnum) {
       console.log("Guessed");
-
+      clearInterval(timer);
       result.html(" ");
       let img = document.createElement("img");
       img.src = "img/win.gif";
       img.setAttribute("alt", "win");
-      img.setAttribute("width", "200px");
+      img.setAttribute("width", "100px");
       document.getElementById("resultId").appendChild(img);
 
       document.getElementById("uValue").disabled = true;
