@@ -50,6 +50,25 @@ $(document).ready(function() {
         left: current * 45 - 20 + "%"
       });
     }
+    $(".userValue").on("change", function() {
+        var current = $(this).val();
+        if (current <= 5) {
+            badge.text(current).animate({
+                left: current * 45 + 20 + "%"
+            });
+        } else if (current > 5 && current <= 10) {
+            badge.text(current).animate({
+                left: current * 45 + "%"
+            });
+        } else if (current > 10 && current <= 15) {
+            badge.text(current).animate({
+                left: current * 45 - 10 + "%"
+            });
+        } else if (current > 15 && current <= 20) {
+            badge.text(current).animate({
+                left: current * 45 - 20 + "%"
+            });
+        }
 
     power = power - 20;
     document.getElementById("power").innerHTML = power;
@@ -82,7 +101,7 @@ $(document).ready(function() {
       img.setAttribute("width", "100px");
       document.getElementById("resultId").appendChild(img);
 
-      document.getElementById("uValue").disabled = true;
+            document.getElementById("uValue").disabled = true;
 
       $.ajax({
         url: "./API/Receivers/resultPointsReceiver.php",
@@ -106,24 +125,24 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  console.log("test");
-  $("#sidebar").mCustomScrollbar({
-    theme: "minimal"
-  });
+    console.log("test");
+    $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+    });
 
-  $("#dismiss, .overlay").on("click", function() {
-    // hide sidebar
-    $("#sidebar").removeClass("active");
-    // hide overlay
-    $(".overlay").removeClass("active");
-  });
+    $("#dismiss, .overlay").on("click", function() {
+        // hide sidebar
+        $("#sidebar").removeClass("active");
+        // hide overlay
+        $(".overlay").removeClass("active");
+    });
 
-  $("#sidebarCollapse").on("click", function() {
-    // open sidebar
-    $("#sidebar").addClass("active");
-    // fade in the overlay
-    $(".overlay").addClass("active");
-    $(".collapse.in").toggleClass("in");
-    $("a[aria-expanded=true]").attr("aria-expanded", "false");
-  });
+    $("#sidebarCollapse").on("click", function() {
+        // open sidebar
+        $("#sidebar").addClass("active");
+        // fade in the overlay
+        $(".overlay").addClass("active");
+        $(".collapse.in").toggleClass("in");
+        $("a[aria-expanded=true]").attr("aria-expanded", "false");
+    });
 });
