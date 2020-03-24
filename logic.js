@@ -7,19 +7,19 @@ $(document).ready(function() {
   var timeAvailable = 20;
   var eleTimer = document.getElementById("timer");
 
-  var timer = setInterval(countdown, 1000);
-
+ // var timer= setInterval(countdown, 1000);
+// $("#timer").on("click", function(){
+//   setInterval(countdown, 1000);
+// });
   function countdown() {
     if (timeAvailable < 0) {
       console.log("zero");
       document.getElementById("uValue").disabled = true;
       result.html("TIMEOUT");
-      let img = document.createElement("img");
-      img.src = "img/timeout.png";
+      let img2=document.getElementById("friendly-bot");
+      img2.src="./img/sad.gif";
       img.setAttribute("alt", "timeout");
-
       img.setAttribute("width", "100px");
-
       document.getElementById("resultId").appendChild(img);
       clearTimeout(timer);
     } else {
@@ -28,6 +28,10 @@ $(document).ready(function() {
     }
   }
   $(".userValue").on("change", function() {
+    //document.getElementById("timer").style.display = 'inblock';
+  $("#timer").fadeIn();
+        setInterval(countdown, 1000);
+     
     var current = $(this).val();
     if (current <= 5) {
       badge.text(current).animate({
@@ -53,6 +57,8 @@ $(document).ready(function() {
     if (power <=0) {
       result.html("Lost");
       document.getElementById("uValue").disabled = true;
+      let img2=document.getElementById("friendly-bot");
+      img2.src="./img/sad.gif";
       clearInterval(timer);
     }
 
@@ -66,8 +72,12 @@ $(document).ready(function() {
       console.log("Guessed");
       clearInterval(timer);
       result.html(" ");
-      let img = document.createElement("img");
-      img.src = "img/win.gif";
+      //let img = document.createElement("img");
+     // img.src="./img/happy.gif";
+      let img1=document.getElementById("friendly-bot");
+      img1.src='./img/happy.gif';
+      //document.getElementById("friendly-bot").src="./img/happy.gif";
+      //$("friendly-bot").attr("src","./img/happy.gif");
       img.setAttribute("alt", "win");
       img.setAttribute("width", "100px");
       document.getElementById("resultId").appendChild(img);
