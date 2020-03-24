@@ -4,6 +4,27 @@ $(document).ready(function() {
   var result = $(".result");
   var power = document.getElementById("power").innerHTML;
   console.log(randomnum);
+  var timeAvailable = 20;
+  var eleTimer = document.getElementById("timer");
+
+  var timer = setInterval(countdown, 1000);
+
+  function countdown() {
+    if (timeAvailable < 0) {
+      console.log("zero");
+      document.getElementById("uValue").disabled = true;
+      result.html("TIMEOUT");
+      let img = document.createElement("img");
+      img.src = "img/timeout.png";
+      img.setAttribute("alt", "timeout");
+      img.setAttribute("width", "200px");
+      document.getElementById("resultId").appendChild(img);
+      clearTimeout(timer);
+    } else {
+      eleTimer.innerHTML = timeAvailable + " seconds remaining";
+      timeAvailable--;
+    }
+  }
   $(".userValue").on("change", function() {
     var current = $(this).val();
     if (current <= 5) {
@@ -24,10 +45,10 @@ $(document).ready(function() {
       });
     }
 
-    power = power - 10;
+    power = power - 20;
     document.getElementById("power").innerHTML = power;
 
-    if (power < 50) {
+    if (power <=0) {
       result.html("Lost");
       document.getElementById("uValue").disabled = true;
     }
@@ -49,6 +70,22 @@ $(document).ready(function() {
       document.getElementById("resultId").appendChild(img);
 
       document.getElementById("uValue").disabled = true;
+
+      $.ajax({
+        url: "./API/Receivers/resultPointsReceiver.php",
+        method: "POST",
+        data: {
+          power: power,
+        },
+        dataType: "json",
+        success: function(response) {
+          if (response.status == 405){
+          } else {
+            
+              //top.location = './index.php';
+          }
+        }
+      });
 
       /* result.html("Guessed"); */
     }

@@ -12,6 +12,7 @@ if(isset($_SERVER['REQUEST_METHOD'])) {
           $userName = $_POST["userName"];
           $password = $_POST["password"];
           $result=signUp($userName,$password);
+          //echo "<script>console.log('Debug Objects: " . $_SESSION["id"] . "' );</script>";
           echo json_encode($result); 
    
           }else {

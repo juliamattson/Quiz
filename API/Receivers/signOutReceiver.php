@@ -11,6 +11,7 @@ if(isset($_SERVER['REQUEST_METHOD'])) {
 
             unset($_POST["signOut"]);
             unset($_SESSION["userName"]);
+
           echo true;
    
           }else {

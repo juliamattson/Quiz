@@ -17,25 +17,25 @@
 
     </head>
     <body>
-    <nav>
-          <ul >
-            <li >
-              <a href="./index.php" > <img src="img/home-icon.png" alt="">  Home </a>
-            </li>
-            <li >
-              <a href="./topList.php" > <img src="img/about-icon.png" alt="">  ToList</a>
-            </li>
-            <li >
-              <a href="./rules.php" >  <img src="./img/document.png" alt="">  Rules</a>
-            </li>
-            <li >
-              <a href="#4" > <img src="./img/restart.png" alt="">  Restart</a>
-            </li>
-            <li >
-              <a href="#4" id="signOut"> <img src="./img/exit.png" alt="">  Sign Out</a>
-            </li>
-          </ul>
-        </nav>
+    <nav class="gameNav">
+      <ul>
+        <li>
+          <a href="./index.php" > <img src="img/home-icon.png" alt="">  Home </a>
+        </li>
+        <li>
+          <a href="./topList.php" > <img src="img/about-icon.png" alt="">  Toplist</a>
+        </li>
+        <li>
+          <a href="./rules.php" >  <img src="./img/document.png" alt="">  Rules</a>
+        </li>
+        <li>
+        <a type="button" href="#" onClick="window.location.href=window.location.href"> <img src="./img/restart.png">  Restart</a>
+        </li>
+        <li>
+          <a id="signOut" href="#"> <img src="./img/exit.png" alt="">  Sign out</a>
+        </li>
+      </ul>
+    </nav>
 
 
         <section class="panel b-blue" >
