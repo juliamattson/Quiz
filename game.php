@@ -52,11 +52,11 @@
 
         <section >
           <article>
-           <img src="./img/friendly-bot.gif" alt="" id="friendly-bot" height="150px" width="auto" style="margin-top: 2%">
+           <img src="./img/jump.gif" alt="" id="friendly-bot" height="150px" width="auto" style="margin-top: 2%">
               <h3 style="color:#ffffff;">Friendly Bot</h3>
               <p style="color:#ffffff;">He's a happy and friendly bot, try to beat him.</p>
               <h4>Player Power: <span id="power">100</span></h4>
-              <div id="timer"></div>
+              <div id="timer" style="display: none" ></div>
               <h2> Choose a Number </h2>
               <br>
           </article>
