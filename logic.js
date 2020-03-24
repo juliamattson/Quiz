@@ -61,7 +61,7 @@ $(document).ready(function() {
       result.html("Go Down");
     } else if (current == randomnum) {
       console.log("Guessed");
-
+      clearInterval(timer);
       result.html(" ");
       let img = document.createElement("img");
       img.src = "img/win.gif";
