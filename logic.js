@@ -17,7 +17,11 @@ $(document).ready(function() {
       let img = document.createElement("img");
       img.src = "img/timeout.png";
       img.setAttribute("alt", "timeout");
+<<<<<<< HEAD
+      img.setAttribute("width", "200px");
+=======
       img.setAttribute("width", "100px");
+>>>>>>> b004382be5dc3eb275c303326884b7ca7dd04943
       document.getElementById("resultId").appendChild(img);
       clearTimeout(timer);
     } else {
@@ -45,10 +49,10 @@ $(document).ready(function() {
       });
     }
 
-    power = power - 10;
+    power = power - 20;
     document.getElementById("power").innerHTML = power;
 
-    if (power < 50) {
+    if (power <=0) {
       result.html("Lost");
       document.getElementById("uValue").disabled = true;
       clearInterval(timer);
@@ -71,6 +75,22 @@ $(document).ready(function() {
       document.getElementById("resultId").appendChild(img);
 
       document.getElementById("uValue").disabled = true;
+
+      $.ajax({
+        url: "./API/Receivers/resultPointsReceiver.php",
+        method: "POST",
+        data: {
+          power: power,
+        },
+        dataType: "json",
+        success: function(response) {
+          if (response.status == 405){
+          } else {
+            
+              //top.location = './index.php';
+          }
+        }
+      });
 
       /* result.html("Guessed"); */
     }
