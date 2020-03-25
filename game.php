@@ -49,7 +49,7 @@
       </ul>
     </nav>
 
-
+    <section class="computer">
         <section >
           <article>
            <img src="./img/jump.gif" alt="" id="friendly-bot" height="150px" width="auto" style="margin-top: 2%">
@@ -97,6 +97,33 @@
           <div id="h4-container"><div id="h4-subcontainer"><h4 ><span class="selectedValue">0</span></h4></div></div>
         </div>
         </section>
+    </section>
+
+  <section class="mobile">
+      <section>
+          <article>
+           <img src="./img/jump.gif" alt="" id="friendly-bot" height="150px" width="auto" style="margin-top: 2%">
+              <h3 style="color:#ffffff;">Friendly Bot</h3>
+              <p style="color:#ffffff;">He's a happy and friendly bot, try to beat him.</p>
+              <h4>Player Power: <span id="power">100</span></h4>
+              <div id="timer" style="display: none" ></div>
+              <h2> Choose a Number </h2>
+              <br>
+          </article>
+      </section>
+
+      <section id="resultSection">
+          <div>
+            <h4 class="result" id="resultId"></h4>
+            </div>
+      </section>
+      <div class="mainContainer">
+        <form action="" style="display: grid; justify-content: center;">
+          <input  id="uValue" type="number" id="quantity" name="quantity" min="1" max="20">
+          <input  onclick="userValue()" type="submit">
+        </form>
+      </div>
+  </section>
 
        
    
