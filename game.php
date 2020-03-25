@@ -32,19 +32,19 @@
     <nav class="gameNav">
       <ul>
         <li>
-          <a href="./index.php" > <img src="img/home-icon.png" alt="">  Home </a>
+          <a href="./index.php" > <img src="img/home-icon.png" alt="" height="25px" width="auto" >  Home </a>
         </li>
         <li>
-          <a href="./topList.php" > <img src="img/about-icon.png" alt="">  Toplist</a>
+          <a href="./topList.php" > <img src="img/about-icon.png" alt="" height="25px" width="auto" >  Toplist</a>
         </li>
         <li>
-          <a href="./rules.php" >  <img src="./img/document.png" alt="">  Rules</a>
+          <a href="./rules.php" >  <img src="./img/document.png" alt="" height="25px" width="auto">  Rules</a>
         </li>
         <li>
-        <a type="button" href="#" onClick="window.location.href=window.location.href"> <img src="./img/restart.png">  Restart</a>
+        <a type="button" href="#" onClick="window.location.href=window.location.href"> <img src="./img/restart.png" height="25px" width="auto">  Restart</a>
         </li>
         <li>
-          <a id="signOut" href="#"> <img src="./img/exit.png" alt="">  Sign out</a>
+          <a id="signOut" href="#"> <img src="./img/exit.png" alt="" height="25px" width="auto">  Sign out</a>
         </li>
       </ul>
     </nav>
@@ -52,7 +52,7 @@
     
         <section >
           <article>
-           <img src="./img/jump.gif" alt="" id="friendly-bot" height="150px" width="auto" style="margin-top: 2%">
+           <img src="./img/jump.gif" alt="" id="friendly-bot" height="150px" width="auto" style="margin-top: 10%">
               <h3 style="color:#ffffff;">Friendly Bot</h3>
               <p style="color:#ffffff;">He's a happy and friendly bot, try to beat him.</p>
               <h4>Player Power: <span id="power">100</span></h4>
@@ -104,7 +104,7 @@
       <div class="mainContainer">
         <form action="" style="display: grid; justify-content: center;">
           <input   type="number" id="quantity" name="quantity" min="0" max="20">
-          <input id="uVal" type="button" value='submit'>
+          <button id="uVal" type="button" value='submit' style="margin-bottom: 2em; margin-top:0.4em;"> Submit </button>
         </form>
         </section>
       </div>

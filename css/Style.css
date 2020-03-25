@@ -507,6 +507,7 @@ li a:hover:not(.active) {
 @media (max-width: 640px) {
     .nav {
         width: 70px;
+        padding: 5px 10px;
     }
     .nav__list {
         height: 90vh;
@@ -514,6 +515,7 @@ li a:hover:not(.active) {
     ul.gameNav li.right,
     ul.gameNav li {
         float: none;
+        
     }
     .burger {
         height: 10vh;
