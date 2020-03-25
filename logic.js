@@ -105,7 +105,7 @@ $(document).ready(function() {
       clearInterval(timer);
     }
 
-            if (power <= 0) {
+            if (power < 0) {
                 result.html("Lost");
                 document.getElementById("uValue").disabled = true;
                 let img2 = document.getElementById("friendly-bot");
