@@ -66,6 +66,7 @@
             <h4 class="result" id="resultId"></h4>
             </div>
         </section>
+        <section class="computer">
         <section class="inputBar">
           <form action="" >
             <div class="mainContainer">
