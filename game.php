@@ -120,7 +120,7 @@
       <div class="mainContainer">
         <form action="" style="display: grid; justify-content: center;">
           <input  id="uValue" type="number" id="quantity" name="quantity" min="1" max="20">
-          <input  onclick="userValue()" type="submit">
+          <button onclick="userValue()" type="submit" style="margin-bottom: 2em"> submit</button>
         </form>
       </div>
   </section>
